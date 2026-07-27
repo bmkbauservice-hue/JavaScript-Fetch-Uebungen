@@ -1,0 +1,19 @@
+let counter = 1;
+
+const interval = setInterval(() => {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${counter}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log({
+                name: data.name,
+                id: data.id
+            });
+
+            counter++;
+
+            if (counter > 150) {
+                clearInterval(interval);
+            }
+        })
+        .catch(error => console.error(error));
+}, 1000);
