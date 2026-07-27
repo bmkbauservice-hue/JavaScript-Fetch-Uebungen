@@ -1,5 +1,5 @@
 Web Storage API: Komplexere Daten
-''''''''''''''''''''''''''''''''''
+_______________________________________________
 
 Objektiv:
 localStorage Den Wert eines Eingabefelds abrufen und als Array von Objekten speichern  .
